@@ -11,5 +11,6 @@ public class Main {
         System.out.println("hello git!");
         System.out.println("hello java!");
         System.out.println("hello go!");
+        System.out.println("hello c++!");
     }
 }
