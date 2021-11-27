@@ -1,4 +1,4 @@
-package com.tao.project;
+package com.tao.project.component;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
