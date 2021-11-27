@@ -32,7 +32,7 @@
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
             <mvc:exclude-mapping path="/index"/>
-            <bean class="com.tao.project.MyInteceptor"/>
+            <bean class="com.tao.project.component.MyInteceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
 </beans>
