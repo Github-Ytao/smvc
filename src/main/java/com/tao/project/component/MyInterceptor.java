@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
  * @date 2021-11-15 23:44
  */
 @Component
-public class MyInteceptor implements HandlerInterceptor {
+public class MyInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {

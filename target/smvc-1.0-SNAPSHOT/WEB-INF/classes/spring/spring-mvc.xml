@@ -32,7 +32,18 @@
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
             <mvc:exclude-mapping path="/index"/>
-            <bean class="com.tao.project.component.MyInteceptor"/>
+            <bean class="com.tao.project.component.MyInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
+
+    <bean id="person" class="com.tao.project.entity.Person">
+        <property name="id" value="1"/>
+        <property name="name" value="tao"/>
+        <property name="student" ref="student"/>
+    </bean>
+
+    <bean id="student" class="com.tao.project.entity.Student">
+        <property name="id" value="1"/>
+        <property name="name" value=""/>
+    </bean>
 </beans>

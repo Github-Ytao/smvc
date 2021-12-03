@@ -1,9 +1,8 @@
 package com.tao.project;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -16,8 +15,9 @@ import javax.servlet.http.HttpSession;
 public class IndexController {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
-    public String index(HttpServletRequest request) {
-        request.setAttribute("name","tao");
+    public String index(HttpServletRequest request, ModelMap modelMap) {
+        request.setAttribute("lastName","tao");
+        modelMap.put("firstName", "yang");
         return "index";
     }
 

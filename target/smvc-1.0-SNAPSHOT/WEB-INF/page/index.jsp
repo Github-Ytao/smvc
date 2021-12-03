@@ -5,6 +5,6 @@
     <title>hello</title>
 </head>
 <body>
-<h2>hello world ${name}</h2>
+<h2>hello world ${firstName}${lastName}</h2>
 </body>
 </html>
